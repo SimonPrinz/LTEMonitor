@@ -7,7 +7,7 @@ Software to monitor the status of a LinkHub LTE modem via Prometheus and Grafana
 ```yaml
 services:
   lte_exporter:
-    image: ghcr.io/ltmonitor/ltmonitor:latest
+    image: ghcr.io/simonprinz/ltemonitor:latest
     restart: unless-stopped
     ports:
       - "8080:8080"
