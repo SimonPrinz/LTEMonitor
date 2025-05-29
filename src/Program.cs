@@ -1,6 +1,6 @@
 using Prometheus.Client.AspNetCore;
 using Prometheus.Client.DependencyInjection;
-using SimonPrinz.LTEMonitor;
+using SimonPrinz.LTE;
 using SimonPrinz.LTEMonitor.Services;
 
 WebApplicationBuilder lBuilder = WebApplication.CreateBuilder(args);

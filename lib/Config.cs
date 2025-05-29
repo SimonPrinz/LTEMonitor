@@ -1,4 +1,4 @@
-﻿namespace SimonPrinz.LTEMonitor;
+﻿namespace SimonPrinz.LTE;
 
 public class Config
 {

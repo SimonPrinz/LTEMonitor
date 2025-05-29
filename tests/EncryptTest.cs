@@ -1,6 +1,4 @@
-using SimonPrinz.LTEMonitor.Utils;
-
-namespace SimonPrinz.LTEMonitor.Test;
+namespace SimonPrinz.LTE.Test;
 
 public class EncryptTest
 {

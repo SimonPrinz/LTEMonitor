@@ -1,11 +1,11 @@
-﻿using System.Text.Json;
+﻿using System.Net.Http.Json;
+using System.Text.Json;
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using SimonPrinz.LTEMonitor.Model;
-using SimonPrinz.LTEMonitor.Utils;
-using IResult = SimonPrinz.LTEMonitor.Model.IResult;
+using SimonPrinz.LTE.Models;
 
-namespace SimonPrinz.LTEMonitor.Services;
+namespace SimonPrinz.LTE;
 
 public class Client : IDisposable
 {
@@ -98,7 +98,7 @@ public class Client : IDisposable
 			lRequestData.Params = pParams;
 		lRequest.Content = new StringContent(JsonSerializer.Serialize(lRequestData));
 
-		_Logger.LogInformation($"Running method '{pMethod}'");
+		_Logger.LogDebug($"Running method '{pMethod}'");
 		using HttpResponseMessage lResponse = await _HttpClient.SendAsync(lRequest);
 		if (!lResponse.IsSuccessStatusCode)
 			throw new HttpRequestException($"Failed to run method '{pMethod}': {lResponse.StatusCode} - {await lResponse.Content.ReadAsStringAsync()}");

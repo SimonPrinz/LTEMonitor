@@ -11,4 +11,8 @@
         <PackageReference Include="Prometheus.Client.DependencyInjection" Version="1.5.1"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\lib\SimonPrinz.LTE.csproj" />
+    </ItemGroup>
+
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace SimonPrinz.LTEMonitor.Model;
+namespace SimonPrinz.LTE.Models;
 
 public class Request<TParams> where TParams : IParams
 {

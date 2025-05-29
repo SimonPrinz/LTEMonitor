@@ -22,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\src\SimonPrinz.LTEMonitor.csproj"/>
+        <ProjectReference Include="..\lib\SimonPrinz.LTE.csproj" />
     </ItemGroup>
 
 </Project>

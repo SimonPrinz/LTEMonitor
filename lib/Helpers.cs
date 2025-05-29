@@ -1,6 +1,7 @@
-﻿using System.Text;
+﻿using System.Net.Http.Json;
+using System.Text;
 
-namespace SimonPrinz.LTEMonitor.Utils;
+namespace SimonPrinz.LTE;
 
 public static class Helpers
 {
