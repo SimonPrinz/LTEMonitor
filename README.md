@@ -42,6 +42,14 @@ network_signal{type="rsrq"} -10
 system_uptime 1473851
 ```
 
+## Grafana Dashboard
+
+A Grafana dashboard is available at [https://grafana.com/grafana/dashboards/23495-lte-monitor/](https://grafana.com/grafana/dashboards/23495-lte-monitor/).  
+Or the latest version can be imported from the [grafana-dashboard.json](grafana-dashboard.json) in this repository.
+
+![Grafana Summary](screenshot/grafana-summary.png)
+![Grafana Extended](screenshot/grafana-extended.png)
+
 ## Screenshot
 
 ![LinkHub Screenshot](screenshot/LinkHub.png)
